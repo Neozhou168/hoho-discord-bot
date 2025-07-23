@@ -1,12 +1,13 @@
-import { createClient } from '@base44/sdk';
+// import createClient from '@base44/sdk';
+
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import 'dotenv/config';
 
 // 初始化 base44 SDK
-const base44 = createClient({
-  appId: process.env.BASE44_APP_ID,
-  apiKey: process.env.BASE44_API_KEY, // 可选，根据是否需要权限
-});
+// const base44 = createClient({
+//  appId: process.env.BASE44_APP_ID,
+//  apiKey: process.env.BASE44_API_KEY, // 可选，根据是否需要权限
+;
 
 // 初始化 Discord Bot
 const client = new Client({
