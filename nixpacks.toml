@@ -1,0 +1,7 @@
+[phases.setup]
+# Add Deno to the list of system packages available in the container.
+pkgs = ["deno"]
+
+[start]
+# Define the command that starts the application.
+command = "deno run --allow-net --allow-env functions/railwayDiscordBot.js"
